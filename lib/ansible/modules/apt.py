@@ -1169,6 +1169,7 @@ def main():
     locale = get_best_parsable_locale(module)
     # APT related constants
     APT_ENV_VARS = dict(
+        APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE='true',
         DEBIAN_FRONTEND='noninteractive',
         DEBIAN_PRIORITY='critical',
         LANG=locale,
